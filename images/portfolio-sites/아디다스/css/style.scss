@@ -1,0 +1,715 @@
+
+@charset "UTF-8";
+
+#wrap{
+
+    >header{
+        >.banner{
+            width: 100%;
+            height: 30px;
+            background-color: black;
+            >ul{
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-between;
+                >li{
+
+                    &:nth-child(1){
+                        margin-left:230px;
+                    }
+
+
+
+
+                    &:nth-child(3){
+                        margin-right:230px;
+                    }
+                    >a{
+                        color: white;
+                        font-size: 10px;
+                        font-weight: 600;
+                        font-family: '고딕';
+                        line-height: 30px;
+                        letter-spacing: 2px;
+                        &:hover{
+                            border-bottom: white solid 1px;
+                        }
+                    }
+                   
+                }
+            }
+        }// end of banner
+        >.bg_lnb{
+            display: none;
+            position: absolute;
+            left: 0;
+            top: 125px;
+            z-index: 1000;
+            width: 100%;
+            height: 248px;
+            // border-bottom: 3px solid black;
+            background-image: url(../images/Adidas_texture_minimalism-1918189.jpg!d);
+            background-size: cover;
+            background-repeat: no-repeat;
+            >p{
+                position: absolute;
+                top: -30px;
+                right: 120px;
+                width: 320px;
+                text-indent: -9999px;
+                height: 320px;
+                background-image: url(../images/55869514_1212019435640049_8841939405796016128_n.png);
+            }   
+            >a{
+                text-indent: -9999px;
+            }
+         
+        }// end of bg_lnb
+>.container{
+        position: relative;
+        width: 100%;
+        height: 80px;
+        background-color: white;
+        border-bottom: 1px solid #eee;
+        margin: 0 auto;
+        >fieldset{
+            >ul{
+                display: flex;
+                flex-flow: row nowrap;
+                position: absolute;
+                top: 20px;
+                right: 40px;
+               >.search{
+               >input{
+                   width: 250px;
+                   margin-right: 20px;
+                   background-color: #eee;
+                   height: 40px;
+                   border: none;
+                   text-indent: 10px;
+                
+               }
+
+               }
+
+               >li{
+                   &:nth-child(2){
+                       background-image: url(../images/people.png);
+                       width: 25px;
+                       height: 25px;
+                       margin-top: 5px;
+                       text-indent: -9999px;
+                       margin-right: 20px;
+                   }
+                   &:nth-child(3){
+                       background-image: url(../images/like.png);
+                       width: 25px;
+                       height: 25px;
+                       margin-top: 5px;
+                       text-indent: -9999px;
+                       margin-right: 20px;
+                   }
+                   &:nth-child(4){
+                       background-image: url(../images/cart.png);
+                       width: 25px;
+                       height: 25px;
+                       margin-top: 5px;
+                       text-indent: -9999px;
+                   }
+               }
+            }
+        }
+    >.logo{
+            width: 60px;
+            background-size: cover;
+            background-image: url(../images/icon-adidas-logo.svg);
+            margin-left: 40px;
+            margin-top: 15px;
+        >a{
+            display: block;
+            height: 60px;
+            text-indent: -9999px;
+            
+        } 
+    }// end of logo
+
+    >.snb{
+        position: absolute;
+        display: flex;
+        flex-flow: row nowrap;
+        top: -10px;
+        right: 40px;
+        >li{
+            margin-right:20px;
+            >a{
+                font-size: 13px;
+            }
+        }
+    }// END OF snb
+
+    >nav{
+        position: absolute;
+        top: 60px;
+        left: 450px;
+        z-index: 1000;
+  
+        >.gnb{
+            z-index: 1000;
+            margin: auto;
+            display: flex;
+            flex-flow: row nowrap;
+            width: 900px;
+            justify-content: space-between;
+            >li{width: 150px;
+              
+                >a{
+                    font-size: 16px;
+                    font-style: '고딕';
+                    font-weight: 600;
+                    text-align: center;
+                 
+                  
+                }
+              
+
+
+                >.lnb{
+                    display: none;
+            
+                    z-index: 1000;
+                    >li{
+                        text-indent: 6px;
+                        &:hover{
+                            opacity: 1;
+                            
+                            >a{
+                                color: white;
+                                opacity: 1;
+                            }
+                            border: white 3px solid;
+                            
+                        }
+                        >a{
+                            opacity: 0.5;
+                            width: 150px;
+                            color: white;
+                            height: 60px;
+                            line-height: 60px;
+                            font-size: 16px;
+                            font-weight: 600;
+                         
+                        }
+                    }
+                }// end of lnb
+            }// end of li
+        }
+    }
+}// end of container
+    }// end of header
+
+    >section{
+        .membersale{
+            position: relative;
+            width: 100%;
+            height: 810px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-image: url(../images/FAMILY_main_MH-2880x1280_DT-green_tcm215-881358.jpg);
+            >.main{
+                >h1{
+                    position: absolute;
+                    top: 315px;
+                    left: 160px;
+                    font-size: 50px;
+                    color: white;
+                    font-family: 'Black Han Sans';
+                    font-weight: 400;
+                }
+                >p{
+                    position: absolute;
+                    top: 370px;
+                    color: white;
+                    font-family: '고딕';
+                    font-size: 20px;
+                    left: 160px;
+                    font-weight: 600;
+                }
+                >button{
+                    position: absolute;
+                    top: 400px;
+                    color: black;
+                    font-family: '고딕';
+                    font-size: 20px;
+                    left: 160px;
+                    width: 150px;
+                    height: 60px;
+                    font-weight: 600;
+                    box-shadow: 1px 1px white;
+                  
+                }
+            }
+        }// end of membersale
+
+        .plastic{
+            position: relative;
+            width: 100%;
+            height: 810px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-image: url(../images/sustainability-ss22-rfto-tease-HP-GLP-mh-Karlie-d_tcm215-865890.jpg);
+            >.main{
+                >h1{
+                    position: absolute;
+                    top: 315px;
+                    left: 160px;
+                    font-size: 40px;
+                    color: white;
+                    font-family: 'Black Han Sans';
+                    font-weight: 400;
+                }
+                >p{
+                    position: absolute;
+                    top: 430px;
+                    color: white;
+                    font-family: '고딕';
+                    font-size: 20px;
+                    left: 160px;
+                    font-weight: 600;
+                }
+                >button{
+                    position: absolute;
+                    top: 500px;
+                    color: black;
+                    font-family: '고딕';
+                    font-size: 20px;
+                    left: 160px;
+                    width: 150px;
+                    height: 60px;
+                    font-weight: 600;
+                    box-shadow: 1px 1px white;
+                  
+                }
+            }
+        }// end of plastic
+
+>.happy{
+    width: 1400px;
+    margin: 0 auto;
+>h1{
+    font-size: 60px;
+    font-family: 'Black Han Sans';
+    font-weight: 400;
+    margin-top: 50px;
+   
+}
+>p{
+    font-size: 20px;
+    font-family: 'Black Han Sans';
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+
+>#slides{
+   
+    width: 1400px;
+    position: relative;
+    margin: 0 auto;
+>.screen{
+    width: 1200px;
+    height: 500px;
+    margin: 0 auto;
+    overflow: hidden;
+    >.slides-container{
+        
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;  
+     
+        width: calc(276px *6);
+        padding-top: 40px;
+        margin-left: -50px;
+        >li{
+            width: 276px;
+        -webkit-transition: all 0.35s;
+        transition: all 0.35s;
+        &.on{
+            position: relative;
+            z-index: 100;
+            margin-left: -50px;
+            -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+            
+        }
+        >a{
+            display: block;
+            >img{
+                display: block;
+                width: 100%;
+            }
+            >p{
+                margin-top: 50px;
+                font-size: 14px;
+                font-family: '고딕';
+                font-weight: 600;
+            }
+        }
+        }
+    } //end of slides-conatiner
+}// end of screen
+    >a{
+        display: block;
+        position: absolute;
+        top: 50%;
+        width: 38px;
+        height: 72px;
+        margin-top: -36px;
+        text-indent: -9999px;
+
+    }
+    >.prev{
+        left: 0;
+        background-image: url(./../images/prev.png); 
+    }
+    >.next{
+        right: 0;
+        background-image: url(./../images/next.png); 
+    }
+}//end of slides
+
+
+>#slides2{
+    
+    width: 1400px;
+    position: relative;
+    margin: 0 auto;
+>.screen{
+    width: 1200px;
+    height: 500px;
+    margin: 0 auto;
+    overflow: hidden;
+    >.slides-container{
+        
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;  
+     
+        width: calc(276px *6);
+        padding-top: 40px;
+        margin-left: -50px;
+        >li{
+            width: 276px;
+        -webkit-transition: all 0.35s;
+        transition: all 0.35s;
+        &.on{
+            position: relative;
+            z-index: 100;
+            margin-left: -50px;
+            -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+        }
+        >a{
+            display: block;
+            >img{
+                display: block;
+                width: 100%;
+            }
+            >p{
+                margin-top: 50px;
+                font-size: 14px;
+                font-family: '고딕';
+                font-weight: 600;
+            }
+        }
+        }
+    } //end of slides-conatiner
+}// end of screen
+    >a{
+        display: block;
+        position: absolute;
+        top: 50%;
+        width: 38px;
+        height: 72px;
+        margin-top: -36px;
+        text-indent: -9999px;
+
+    }
+    >.prev{
+        left: 0;
+        background-image: url(./../images/prev.png); 
+    }
+    >.next{
+        right: 0;
+        background-image: url(./../images/next.png); 
+    }
+}//end of slides2
+}// end of happy
+
+>.topic{
+    width: 100%;
+    background-image: url(../images/wallpaperbetter.jpg);
+    height: 1070px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    >h1{
+        position: relative;
+        top:480px;
+        margin-left: 80px;
+        color: white;
+        font-size: 60px;
+        font-weight: 600;
+        font-family: 'ITC Avant Garde Gothic LT Demi Regular';
+    }
+    >h2{
+        position: relative;
+        top:530px;
+        margin-left: 80px;
+        color: white;
+        font-size: 30px;
+        font-weight: 600;
+        font-family: 'ITC Avant Garde Gothic LT Demi Regular';
+    }
+    
+    >.topicslides{
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        height: 950px;
+        margin: 0 auto;
+        >.slides-topic-container{
+            position: absolute;
+            top: 50px;
+            left: 700px;
+            width: 630px;
+            margin: 0 auto;
+           
+            >p{
+                display: none; 
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                text-indent: -99999px;
+                background-position: center center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                >a{
+                    display: block;
+                    height: 840px;
+                }
+            }
+            >.slide-1{
+                background-image: url(../images/KR_originals-ss22-parley-launch-hp-teaser-carousel-GV7615-d_tcm215-879181.jpg);
+                >span{
+                    font-size: 16px;
+                    color: white;
+                    font-weight: 600;
+                    background-color: black;
+                }
+            }
+            >.slide-2{
+                background-image: url(../images/ss22-blue-version-teaser-carousel-d_tcm215-876385.jpg);
+                >span{
+                    font-size: 16px;
+                    color: white;
+                    font-weight: 600;
+                    background-color: black;
+                }
+            }
+            >.slide-3{
+                background-image: url(../images/GOLF_ADICROS_carousel-d_tcm215-882956.jpg);
+                >span{
+                 
+                    font-size: 16px;
+                    color: white;
+                    font-weight: 600;
+                    background-color: black;
+                }
+            }
+        }// end of slides-topic-container
+            >.slides-topic-pagination{
+                    position: absolute;
+                    top:600px;
+                    left: 80px;
+                    display: flex;
+                    flex-flow: row nowrap;
+                >li{
+                    width: 150px;
+                   
+                    border: white solid 2px;
+                    text-align: center;
+                    line-height: 60px;
+                    margin-right: 20px;
+                    &.on{
+                        background-color: white;
+                        >a{ display: block;
+                            color: black;
+                            height: 60px;
+                        }
+                      }
+                    &:hover{
+                        background-color: white;
+                        >a{
+                            color: black;
+                            
+                        }
+                    }
+                    
+                >a{
+                    color: white;
+                    font-weight: 600;
+                    font-size: 14px;
+                    display: block;
+                    height: 60px;
+                }
+                }
+            }
+        >a{
+            display: block;
+            position: absolute;
+            top: 50%;
+            width: 80px;
+            height: 100px;
+            margin-top: -50px;
+            text-indent: -9999px;
+            background-image: url(../images/btn_navigation.png);
+        }
+        >.prev{
+            left: 550px;
+            background-position: -5px -225px;
+            &:hover{
+                background-position: -5px -335px;
+            }
+        }
+        >.next{
+            right: 450px;
+            background-position: -5px -5px;
+            &:hover{
+                background-position: -5px -115px;
+            }
+        }
+
+    }//end of topicslides
+}
+
+>.sales{
+    width: 100%;
+    background-color: yellow;
+    margin: 0 auto;
+    >h1{
+        margin-left: 600px;
+        font-size: 32px;
+        font-weight: 600;
+        padding-top: 50px;
+    }
+    >h2{
+        margin-left: 600px;
+        font-size: 16px;
+        font-weight: 600;
+        padding-top: 20px;
+    }
+    >button{
+        background-color: black;
+        color: white;
+        font-family: '고딕';
+        font-size: 20px;
+        width: 150px;
+        height: 60px;
+        font-weight: 600;
+        border: 2px solid white;
+        box-shadow: 5px 5px black;
+        position: relative;
+        top: -100px;
+        left: 1100px;
+  
+        &:hover{
+            background-color: white;
+            color: black;
+            box-shadow: 5px 5px black
+            
+            ;
+            
+        }
+        
+      
+    }
+}
+    }// end of section
+>footer{background-color: #eee;
+        >.goods-category{
+            width: 900px;
+            margin: 0 auto;
+           
+            >ul{
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-between;
+                >li{
+                    font-size: 16px;
+                    margin-top: 30px;
+                    font-weight: 600;
+                    >ol{
+                        margin-top: 20px;
+                        margin-bottom: 30px;
+                        >li{
+                            font-size: 12px;
+                            line-height:26px;
+                            font-weight: 400;
+                            &:hover{
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+            }
+            >p{
+                font-size: 14px;
+                line-height:26px;
+            }
+                
+        
+        }//end of goods-category
+        >.lastbanner{
+            position: relative;
+            width: 100%;
+            background-color: #363738;
+            height: 150px;
+            margin: 0 auto;
+            >.out{
+                padding-top: 50px;
+                width: 900px;
+                margin: 0 auto;
+                >.korea{
+                    background-image: url(../images/kr.svg);
+                    background-repeat: no-repeat;
+                    text-indent: -9999px;
+                }
+                >h1{
+                    position: absolute;
+                    top:50px;
+                    left: 560px;
+                    font-size: 12px;
+                    color: white;
+                }
+                .last{
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    color: white;
+                }
+                >address{
+                    color: white;
+                }
+
+            }
+        }
+        }// end of footer
+}// end of wrap

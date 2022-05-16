@@ -1,0 +1,766 @@
+
+@charset "utf-8";
+
+#wrap{
+>header{
+    position: relative;
+    background-color: black;
+    >.container{
+    //서브메뉴 배경판
+    >.bg_lnb{
+       z-index: 100;
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 80px;
+        width: 100%;
+        height: 300px;
+        background-color: black;
+        text-indent: -9999px;
+        border-top: 3px solid #333333;
+      
+    }    //lnb
+        position: relative;
+        left: 0;
+        width: 100%;
+        height:80px;
+        margin: 0 auto;
+        h1.logo{
+            position: absolute;
+            top: -35px;
+            left: 10px;
+            background-image: url(../images/logo.jpg);
+            background-size: cover;
+            width: 150px;
+            height: 90px;
+            padding-top: 10px;
+               margin-left: 10px;
+                 >a{
+              display: block;
+              height: 60px;
+              text-indent: -9999px;
+                }
+       }//로고
+           
+       >nav{
+        position: absolute;
+        left:30%;
+        top: 30px;
+     
+ 
+        >.gnb{
+         display: none;
+         font-family: '고딕';
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            width: 920px;
+       
+       
+                >li{height: 100px;
+                 
+                   display: block;
+                 height: 100px;
+               
+                    >a{display: block;
+                     z-index: 100;
+                        color: white;
+                        position: relative;
+                        top: -30px;
+                        width: 184px; 
+                        height:60px;
+                        text-align: center;
+                        line-height: 80px;
+                        font-size: 20px;
+                        font-weight: 800;
+                       
+                      
+                      
+                    }//li>a
+                    
+            >.lnb{
+               display: none;
+                position: relative;
+                z-index: 100;
+                display: block;
+               top: -10px;
+               padding-top:10ox ;
+                &:hover{
+                 
+                    background-color: #111111;
+                  border-top: #5865f5 2px solid;
+                
+                    }
+                >li{
+                  padding-top:10px ;
+                    >a{
+                      
+                        display: block;
+                        color: white;
+                        font-size: 16px;
+                        font-weight: 600;
+                        height: 40px;
+                        line-height: 40px;
+                     
+                        text-align: center;
+                        &:hover{
+                           
+                            color: #5865f5;
+                        }
+                        }//end of a
+                  } //end of li
+                } //end of lnb
+            } //li    
+        } //gnb
+    } //nav
+ } //container
+} //header
+
+
+
+>section
+{
+    > #slides {
+        height: 855px;
+
+        > .slides {
+           position: relative;
+
+           overflow: hidden;
+           height: 100%;
+           width: 100%;
+           margin: 0 auto;
+           > .slides-container {
+              position: absolute;
+              left: -500%;
+              display: flex;
+              flex-flow: row nowrap;
+              width: calc(15 * 100%);
+              height: 100%;
+
+              > p {
+                 position: relative;
+                 display: block;
+                 height: 100%;
+                 width: calc(100% * 15);
+                 background-position: center center;
+                 > video {
+                    position: relative;
+                    z-index: 0;
+                    object-fit: fill;
+                 }
+              } //end of .slides-container > p
+
+              > .slide-4 {
+                 text-indent: -9999px;
+                 background-image: url(./../images/PC_LXPS-S3.jpg);
+              }
+              > .slide-5 {
+                 background-image: url(./../images/PC_ZV-1.jpg);
+                 text-indent: -9999px;
+               }
+           } //end of .slides-container
+
+           > a {
+              display: block;
+              position: absolute;
+              height: 100%;
+              width: 50%;
+              text-indent: -9999px;
+           }
+           > .next {
+              right: 0;
+              cursor: url(./../images/arrow_r.1db549d7.cur), auto;
+           }
+           > .prev {
+              left: 0;
+              cursor: url(./../images/arrow_l.935a967c.cur), auto;
+           }
+
+        
+        } //end of .slides
+     } //end of #slides
+     #allitems{
+        >.item{
+           position: relative;
+           overflow: hidden;
+           background-color: #eee;
+         //  border: 1px solid black;
+	   width: 50%;
+	   height: 900px;
+      right: -50%;
+
+	// border: 1px solid #000;
+   >.item-slides{
+      position: absolute;
+      left: calc(-50% * 4);
+      top: 450px;
+      
+      width: calc(100%*12);
+      // border: 1px solid black;
+      display: flex;
+         
+      flex-flow: row nowrap;
+      height: 450px;
+      margin-top: -225px;
+     
+      >.itemslides1{
+        
+         height: 450px;
+      
+      
+         background-image: url(../images/102284831_1.png);
+      }
+      >.itemslides2{
+         background-image: url(../images/ILCE-7M4_1.png);
+        
+         height: 450px;
+      }
+      >.itemslides3{
+         background-image: url(../images/92487311_List0.png);
+         
+         height: 450px;
+         
+      }
+      >.itemslides4{
+         background-image: url(../images/92487211_List0.png);
+         
+        
+         height: 450px;
+      }
+      >p{ background-color: white;
+      
+         margin-left: 50px;
+         width: calc(50% / 12);
+         text-indent: -99999px;
+         background-position: center center;
+         background-size: cover;
+         &:hover{
+            transform:  scale(1.1);
+            transition: all 0.6s;
+         }
+       
+         >a{
+
+            display: block;
+            height:450px;
+         }
+      }// end of p
+ 
+   }//end of item-slides
+   }//end of item
+
+>.itemNext{
+   position: absolute;
+   top: 1160px;
+   right: 0 ;
+   width: 150px;
+   height: 450px;
+   // border: 1px solid black;
+   text-indent: -9999px;
+   cursor: url(./../images/arrow_r.1db549d7.cur), auto;
+}
+
+
+>.expand{
+position: relative;
+   overflow: hidden; 
+   width: 50%;
+ top: -900px;
+   height: 900px;
+   border: 1px solid black;
+ margin-bottom: -900px;
+   background-color: #eee;
+      >.expand-slides{
+         width: calc(100%*12);
+     
+       
+         display: flex;
+         
+         
+         flex-flow: row nowrap;
+         >.expandslides1{
+         
+            background-image: url(../images/메인_추천상품배너_01.jpg);
+         }
+         >.expandslides2{
+            
+            background-image: url(../images/메인_추천상품배너_02.jpg);
+         }
+         >.expandslides3{
+            
+            background-image: url(../images/메인_추천상품배너_03.jpg);
+         }
+         >.expandslides4{
+            
+            background-image: url(../images/메인_추천상품배너_04.jpg);
+         }
+         >p{
+            width: calc(100% / 12);
+            text-indent: -9999px;
+            background-position: center center;
+            background-size: cover;
+            
+            >a{
+               display: block;
+               height:900px;
+               
+            }
+         }
+      }  // end of expand-slides
+      
+   } // end of expand
+   
+}// end of #allitems
+
+>.earphone{
+   width: 98%;
+   position: relative;
+   height: 600px;
+   // border: 1px solid black;
+   margin: 0 auto;
+   margin-top: 30px;
+   background-image: url(../images/PC_Main-Event-Banner-L_B.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   >.event{
+      padding-top: 20px;
+      font-size: 36px;
+      font-weight:bold;
+      text-align: center;
+      margin-top: 20px;
+      background-position: center center;
+      font-family: '고딕';
+   } //end of event
+   >.main{
+      position: absolute;
+      top: 230px;
+      left: 350px;
+      font-size: 36px;
+      font-weight: 800;
+      font-family: '고딕';
+   }
+   >p{
+      position: absolute;
+      top: 290px;
+      left: 350px;
+      font-size: 18px;
+      font-weight: 800;
+      color: rgb(88, 88, 88);
+      font-family: '고딕';
+   }
+   >.slides-container{
+      overflow: hidden;
+	position: absolute;
+   top: 80px;
+	width: 450px;
+	height: 450px;
+   right: 100px;
+   background-color: white;
+	// border: 1px solid #000;
+   >a{
+      
+         display: block;
+         position: absolute;
+         top: 50%;
+         width: 80px;
+         height: 100px;
+         margin-top: -50px;
+         text-indent: -9999px;
+         
+         background-image: url(./../images/btn_navigation.png);
+      
+   }
+   >.earphoneNext{
+      right:-20px;
+      background-position: -5px -5px;
+      &:hover{
+         background-position: -5px -115px;
+      }
+    }
+    >.earphonePrev{
+      left: -20px;
+      background-position: -5px -225px;
+      &:hover{
+         background-position: -5px -335px;
+      }
+    }
+   >.earphone-slides{
+      position: absolute;
+      left: calc(-400px * 2);
+      top: 40px;
+      width: calc(400px * 6);
+      display: flex;
+      flex-flow: row nowrap;
+      margin-left: 25px;
+      display: flex;
+      flex-flow: row nowrap;
+      
+      >.earphoneslides1{
+         
+         background-image: url(../images/main_prod_audio.224ca686.png);
+      }
+      >.earphoneslides2{
+         background-image: url(../images/92487311_List0.png);
+      }
+      >p{
+         background-position: center center;
+         background-size: cover;
+         width: 400px;
+         >a{
+            height: 400px;
+            display: block;
+            text-indent: -9999px;
+         }
+      }
+
+      }// end of earphone-slides
+   
+   }// end of slides-container
+   }// end of earphone
+
+   >.items{
+      position: relative;
+      width: 98%;
+      height: 650px;
+      // border: 1px solid black;
+      margin: 0 auto;
+      margin-top: 25px;
+      margin-bottom: 60px;
+      >ul{
+         display: flex;
+         flex-flow: row nowrap;
+         justify-content: space-between;
+         >li{
+            width: 32.5%;
+            // border: 1px solid black;
+            height: 600px;
+            background-size: cover;
+            background-position: center center;
+               
+               &:nth-child(1){
+               background-image: url(../images/Main-Event-Banner-S.jpg);
+               }
+               &:nth-child(2){
+               background-image: url(../images/Main-Event-Banner-S\ \(1\).jpg);
+               }
+               &:nth-child(3){
+               background-image: url(../images/Main-Event-Banner-S\ \(2\).jpg);
+               }
+               >a{
+                     >h2{
+                     position: absolute;
+                     top: 430px;
+                     font-size: 36px;
+                     font-family: '고딕';
+                     margin-left: 20px;
+                  }
+                  >p{position: absolute;
+                     top: 530px;
+                     font-size: 18px;
+                     margin-left: 20px;
+                     font-weight: 800;
+                     font-family: '고딕';
+                  }
+               }
+         } // end of li
+      } // end of ul
+      >h3{
+         text-align: center;
+         margin-top: 30px;
+         font-size: 20px;
+         font-weight: 800;
+      }
+   } // end of items
+   >.product{
+      width: 100%;
+      height: 750px;
+      // border: 1px solid black;
+      position: relative;
+      background-color: #f4f4f4;
+      >h2{
+         padding-top: 50px;
+         text-align: center;
+         font-size: 32px;
+         font-family: '고딕';
+      }
+      >ul{
+         display: flex;
+         flex-flow: row nowrap;
+            >li{
+                  margin-top: 50px;
+               width: 25%;
+               height: 562px;
+               background-repeat: no-repeat;
+               border-right: #eee 1px solid;
+               &:nth-child(1){
+                  background-image: url(../images/main_prod_camera.24473fcf.png);
+                  
+                  
+                     &:hover{
+                     background-color: #5865f5;
+                     transition: all 0.6s  ;
+                  }
+               }
+               &:nth-child(2){
+                  background-image: url(../images/main_prod_vcamera.7e8353a1.png);
+                  &:hover{
+                     background-color: #5865f5;
+                     transition: all 0.6s  ;
+                  }
+               }
+               &:nth-child(3){
+                  background-image: url(../images/main_prod_audio.224ca686.png);
+                  &:hover{
+                     background-color: #5865f5;
+                     transition: all 0.6s  ;
+                     
+                  }
+               }
+               &:nth-child(4){
+                  background-image: url(../images/main_prod_ps.e4346725.png);
+                  &:hover{
+                     background-color: #5865f5;
+                     transition: all 0.6s  ;
+                  }
+               }
+               >a{
+                  >p{
+                     position: absolute;
+                     top: 550px;
+                     margin-left: 20px;
+                     font-size: 20px;
+                     font-family: '고딕';
+                     font-weight: 600;
+                  }
+               }
+            }// end of li
+      } // end of ul
+   } // end of product
+
+   >.banner{
+      position: relative;
+      width: 100%;      
+       display: block;
+         height: 600px;
+         top: -160px;
+         
+         background-repeat: no-repeat;
+         background-position: center center;
+         background-image: url(../images/03_PC_AA_Banner.png);
+         >p{
+            padding-top: 280px;
+            text-align: center;
+            font-size: 28px;
+            font-family: '고딕';
+            font-weight: 600;
+         
+         }
+         
+   }
+   } //section
+
+>footer{
+>.help{
+   position: relative;
+   margin-top: -240px;
+   margin-bottom: -100px;
+height: 200px;
+// border: 1px solid black;
+   width: 100%;
+   >p{
+      font-size: 26px;
+      font-weight: 800;
+      font-family: '고딕';
+      margin-top: 70px;
+      margin-left: 70px;
+   }
+   >ul{
+      display: flex;
+      flex-flow: row nowrap;
+      position: absolute;
+      top: 50px;
+    
+      >li{
+         margin-top: -50px;
+         text-align: center;
+         width: 100px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            margin-right: 80px;
+        
+         &:nth-child(1){
+            margin-left: 1200px;
+            width: 60px;
+            height: 60px;
+            background-image: url(../images/ic_main_help1.ccecec9a.svg);
+         }
+         &:nth-child(2){
+            background-image: url(../images/ic_main_help2.13f77931.svg);
+            width: 60px;
+            height: 60px;
+         }
+         &:nth-child(3){
+            background-image: url(../images/ic_main_help3.dae50ee5.svg);
+            width: 60px;
+            height: 60px;
+         }
+         &:nth-child(4){
+            background-image: url(../images/ic_main_help4.8eb8215d.svg);
+            width: 60px;
+            height: 60px;
+         }
+       
+         >a{
+            text-indent: -9999px;
+            height: 100px;
+            display: block;
+           
+         }
+         >p{
+            margin-left: -45px;
+            width: 150px;
+            margin-top: -30px;
+            font-size: 18px;
+            font-weight: 800;
+            font-family: '고딕';
+         }
+      }
+   }
+}// end of help
+
+>.last{
+   position: relative;
+   margin-top: 30px;
+   width: 100%;
+   height: 400px;
+   background-color: black;
+   color: #bbbbbb;
+
+   >ul{
+      padding-top: 80px;
+      display: flex;
+      flex-flow: row nowrap; 
+      >li{
+         border-right:  1px solid #bbbbbb;
+         text-align: center;
+         &:nth-child(1){
+            width:95px;
+            margin-left: 80px;
+         }
+         &:nth-child(2){
+            width: 165px;
+         }
+         &:nth-child(3){
+            width: 185px;
+         }
+         &:nth-child(4){
+            border: none;
+            width: 95px;
+         }
+         >a{
+            color: #bbbbbb;
+            font-size: 16px;
+            font-weight: 800;
+            font-family: '고딕';
+            
+         }
+      } // end of li
+   }// end of ul
+   >ol{
+      margin-top: 20px;
+      margin-left: 90px;
+      font-size: 12px;
+      font-weight: 800;
+      font-family: '고딕';
+      >li{
+         &:nth-child(2){
+            margin-top: 10px;
+         }
+      }
+      >p{position: absolute;
+         left: 490px;
+         top: 140px;
+         text-indent: -9998px;
+         width: 35px;
+         height: 35px;
+         background-size: contain;
+         background-image: url(../images/escrow_43x43_gray.png);
+      }
+
+   }// end of ol
+
+      >address{
+         margin-top: 30px;
+         margin-left: 90px;
+         font-size: 14px;
+         font-weight: 800;
+         font-family: '고딕';
+         color: #888888;
+      }
+} // end of last
+>.sns{
+   position: absolute;
+   margin-top: -300px;
+   margin-left: 1250px;
+   >ul{
+      display: flex;
+      flex-flow: row nowrap;
+      >p{
+         width: 38px;
+         height: 38px;
+         display: block;
+         text-indent: -9999px;
+         margin-right: 50px;
+         &:nth-of-type(1){
+            
+            background-image: url(../images/ic_facebook.415de282.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 38px;
+            height: 38px;
+            
+         }
+         &:nth-of-type(2){
+            
+            background-image: url(../images/ic_instagram.12a710ab.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 38px;
+            height: 38px;
+         
+         }
+         &:nth-of-type(3){
+            
+            background-image: url(../images/ic_youtube.e6733965.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 38px;
+            height: 38px;
+         
+         }
+         &:nth-of-type(4){
+            
+            background-image: url(../images/ic_blog.75c8bb6d.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 38px;
+            height: 38px;
+         
+         }
+     
+         
+         
+      } // end of li
+      >h2{
+         width: 200px;
+         font-size: 26px;
+         font-weight: 800;
+         font-family: '고딕';
+         color: #bbbbbb;
+      }
+   } // end of ul
+} // end of sns
+} // end of footer
+}//wrap
